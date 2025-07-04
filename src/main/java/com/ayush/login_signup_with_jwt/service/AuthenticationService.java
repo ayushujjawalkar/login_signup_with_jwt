@@ -4,6 +4,7 @@ import com.ayush.login_signup_with_jwt.dto.RegisterUserDto;
 import com.ayush.login_signup_with_jwt.dto.VerifyUserDto;
 import com.ayush.login_signup_with_jwt.repository.UserRepository;
 import jakarta.mail.MessagingException;
+import lombok.RequiredArgsConstructor;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 // ✅ Correct import (your entity class)
@@ -17,6 +18,8 @@ import java.util.Optional;
 import java.util.Random;
 
 @Service
+@RequiredArgsConstructor
+
 public class AuthenticationService {
     private final UserRepository userRepository;
     private final PasswordEncoder passwordEncoder;

@@ -16,9 +16,9 @@ public class User implements UserDetails {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-
+     @Override
     public String getUsername() {
-        return username;
+        return email;
     }
 
     public void setUsername(String username) {

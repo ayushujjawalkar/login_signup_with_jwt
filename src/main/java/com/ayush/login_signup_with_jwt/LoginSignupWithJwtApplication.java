@@ -9,5 +9,4 @@ public class LoginSignupWithJwtApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(LoginSignupWithJwtApplication.class, args);
 	}
-
 }

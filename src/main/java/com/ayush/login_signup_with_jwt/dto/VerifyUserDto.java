@@ -5,6 +5,9 @@ import lombok.Setter;
 @Getter
 @Setter
 public class VerifyUserDto {
+    private String email;
+    private String verificationCode;
+
     public String getEmail() {
         return email;
     }
@@ -20,7 +23,4 @@ public class VerifyUserDto {
     public void setVerificationCode(String verificationCode) {
         this.verificationCode = verificationCode;
     }
-
-    private String email;
-    private String verificationCode;
 }
